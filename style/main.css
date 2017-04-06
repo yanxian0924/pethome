@@ -1,0 +1,263 @@
+@import url('http://fonts.googleapis.com/css?family=Cookie');
+
+html {
+	height: 100%;
+}
+
+body {
+	font:14px/1.5 Arial, Helvetica, sans-serif;
+	padding:0;
+	margin:0;
+	height: 100%;
+}
+
+.error{
+	color: red;
+}
+
+/***************HEADER BEGIN***************/
+header {
+	padding: 20px 40px;
+	box-sizing:border-box;
+	box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.15);
+	height: 67px;
+	background-color: #FFC914;
+}
+
+.header-limiter {
+	max-width: 1200px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.header-limiter h1{
+	float: left;
+	font: normal 35px Cookie, Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	margin: 0;
+}
+
+.header-limiter h1 span {
+	color: #5383d3;
+}
+
+.header-limiter a {
+	color: #5c616a;
+	text-decoration: none;
+}
+
+.header-limiter a:hover {
+	text-decoration: none;
+}
+
+.header-limiter nav{
+	font:15px Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	float: right;
+}
+
+.header-limiter nav a{
+	display: inline-block;
+	padding: 0 5px;
+	opacity: 0.9;
+	text-decoration:none;
+	color: #5c616a;
+	line-height:1;
+}
+
+.header-limiter nav a.selected {
+	background-color: #335cb7;
+	color: #ffffff;
+	border-radius: 3px;
+	padding:6px 10px;
+}
+/***************HEADER END***************/
+
+/***************FOOTER BEGIN***************/
+footer {
+	position: relative;
+	min-height: 40px;
+	height: 70px;
+	width: 100%;
+	background-color: #5c616a;
+}
+
+p.copyright {
+	width: 100%;
+	color: #d9dce2;
+	line-height: 40px;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 0px;
+}
+/***************HEADER END***************/
+
+/***************MAIN PAGE CONTENT BEGIN***************/
+.hero-image {
+  background-image: url("../images/hero_img.jpg");
+  min-height: 700px;
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text p {
+	font-size: 22px;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+.hero-text button a {
+	text-decoration:none;
+	color: black;
+}
+
+.hero-text button a:hover {
+	color: #ffffff;
+}
+/***************MAIN PAGE CONTENT END***************/
+
+/***************SUCCESS MESSAGE BEGIN***************/
+#success_msg {
+	margin-top: 80px;
+}
+
+#success_msg h2 {
+	color: #0fad00;
+}
+
+#success_msg img {
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+#success_msg .msg {
+	font-size: 20px;
+	color: #5C5C5C;
+	margin-bottom: 30px;
+}
+/***************SUCCESS MESSAGE END***************/
+
+/***************SEARCH SECTION IN LIST PAGE BEGIN***************/
+.search-div {
+	margin-top:30px;
+}
+
+.filter-col {
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.search-group {
+	margin-right: 20px;
+}
+
+.search-panel {
+	text-align: center;
+}
+/***************SEARCH SECTION IN LIST PAGE END***************/
+
+/***************IMAGE SECTION IN LIST PAGE BEGIN***************/
+.pic-div {
+	margin: 5px auto;
+	font-size: 0px;
+}
+
+.pic-div a {
+	font-size: 16px;
+  	display: inline-block;
+  	margin-bottom: 8px;
+  	width: calc(50% - 4px);
+  	margin-right: 8px;
+  	text-decoration: none;
+  	color: black;
+}
+
+.pic-div a:nth-of-type(2n) {
+	margin-right: 0;
+}
+
+@media screen and (min-width: 50em) {
+	.pic-div a{
+    	width: calc(25% - 6px);
+  	}
+
+	.pic-div a:nth-of-type(2n) {
+		margin-right: 8px;
+	}
+
+	.pic-div a:nth-of-type(4n) {
+    	margin-right: 0;
+	}
+}
+
+.pic-div a:hover img {
+	transform: scale(1.15);
+}
+
+.pic-div figure {
+	margin: 0;
+  	overflow: hidden;
+}
+
+.pic-div figcaption {
+	margin-top: 15px;
+}
+
+.pic-div img {
+	border: none;
+  	max-width: 100%;
+  	height: auto;
+  	display: block;
+  	background: #ccc;
+  	transition: transform .2s ease-in-out;
+}
+/***************IMAGE SECTION IN LIST PAGE BEGIN***************/
+
+/***************DETAIL PAGE BEGIN***************/
+.detail-val {
+	line-height: 34px;
+	width: 100%;
+}
+/***************DETAIL PAGE END***************/
+
+/***************ADMIN PAGE BEGIN***************/
+.results tr[visible='false'], .no-result {
+	display:none;
+}
+
+.results tr[visible='true'] {
+	display:table-row;
+}
+
+.counter {
+	padding:8px;
+	color:#ccc;
+}
+/***************ADMIN PAGE END***************/
